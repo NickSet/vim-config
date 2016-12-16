@@ -1,6 +1,6 @@
 execute pathogen#infect()
 
-inoremap jj <ESC>
+inoremap jk <ESC>
 
 let mapleader = "\<Space>"
 
@@ -16,6 +16,18 @@ set t_Co=256
 set encoding=utf-8
 set number
 set relativenumber
+
+"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_swift_checkers = ['swiftpm']
+
 
 "Tabs/Indentations
 set expandtab
