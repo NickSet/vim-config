@@ -1,10 +1,24 @@
 execute pathogen#infect()
 
-inoremap jk <ESC>
 
 let mapleader = "\<Space>"
+let maplocalleader = "\<Space>"
 
 filetype plugin indent on
+set nocompatible
+
+"Auto Commands
+autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
+autocmd FileType cpp nnoremap <buffer> <localleader>uc 0xx
+autocmd FileType cpp :iabbrev <buffer> frlp for (int i = 0; i <; i++) {<cr><cr>}<esc>?;<cr>i
+
+"Mappings
+inoremap jk <ESC>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+noremap <leader>sv :source $MYVIMRC<cr>
+
+"Wiki
+let g:vimwiki_list = [{'path': '~/wikis/college/', 'path_html': '~/wikis/college-html/'}]
 
 "Colors/Themes
 syntax on 
@@ -48,3 +62,6 @@ let NERDTreeMinimalUI=1
 
 "Tagbar
 nmap <F8> :TagbarToggle<CR>
+
+"Markdown
+let g:vim_markdown_folding_disabled = 1
