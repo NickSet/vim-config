@@ -26,6 +26,7 @@ set background=dark
 colorscheme solarized 
 let g:airline_theme='solarized'
 set t_Co=256
+let g:solarized_termcolors=256
 
 set encoding=utf-8
 set number
