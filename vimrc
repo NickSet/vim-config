@@ -18,7 +18,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
 
 "Wiki
-let g:vimwiki_list = [{'path': '~/wikis/college/', 'path_html': '~/wikis/college-html/'}]
+let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
 
 "Colors/Themes
 syntax on 
