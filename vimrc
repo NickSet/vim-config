@@ -21,12 +21,11 @@ noremap <leader>sv :source $MYVIMRC<cr>
 let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
 
 "Colors/Themes
+set t_Co=256
 syntax on 
 set background=dark
 colorscheme solarized 
 let g:airline_theme='solarized'
-set t_Co=256
-let g:solarized_termcolors=256
 
 set encoding=utf-8
 set number
