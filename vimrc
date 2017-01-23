@@ -17,14 +17,18 @@ inoremap jk <ESC>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
 
+"Better Whitespace
+nnoremap <leader>sw :StripWhitespace<cr>
+
 "Wiki
-let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
+let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1},
+    \ {'path': '~/Dropbox/wikis/programming/', 'path_html': '~/Dropbox/wikis/programming-html', 'templaet_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
 
 "Colors/Themes
 set t_Co=256
-syntax on 
+syntax on
 set background=dark
-colorscheme solarized 
+colorscheme solarized
 let g:airline_theme='solarized'
 
 set encoding=utf-8
