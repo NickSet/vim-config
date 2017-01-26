@@ -19,6 +19,7 @@ noremap <leader>sv :source $MYVIMRC<cr>
 
 "Better Whitespace
 nnoremap <leader>sw :StripWhitespace<cr>
+let g:better_whitespace_filetypes_blacklist=['md', 'markdown', 'diff', 'gitcommit', 'unite', 'qf', 'help']
 
 "Wiki
 let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1},
