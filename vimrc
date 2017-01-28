@@ -11,6 +11,11 @@ set nocompatible
 autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType cpp nnoremap <buffer> <localleader>uc 0xx
 autocmd FileType cpp :iabbrev <buffer> frlp for (int i = 0; i <; i++) {<cr><cr>}<esc>?;<cr>i
+autocmd FileType * unlet! g:airline#extensions#whitespace#checks
+autocmd FileType markdown let g:airline#extensions#whitespace#checks = [ 'indent' ]
+
+"Change swap directory
+set dir=/tmp
 
 "Mappings
 inoremap jk <ESC>
@@ -19,7 +24,6 @@ noremap <leader>sv :source $MYVIMRC<cr>
 
 "Better Whitespace
 nnoremap <leader>sw :StripWhitespace<cr>
-let g:better_whitespace_filetypes_blacklist=['md', 'markdown', 'diff', 'gitcommit', 'unite', 'qf', 'help']
 
 "Wiki
 let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1},
@@ -67,6 +71,3 @@ let NERDTreeMinimalUI=1
 
 "Tagbar
 nmap <F8> :TagbarToggle<CR>
-
-"Markdown
-let g:vim_markdown_folding_disabled = 1
