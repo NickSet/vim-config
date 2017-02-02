@@ -12,6 +12,7 @@ autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType cpp nnoremap <buffer> <localleader>uc 0xx
 autocmd FileType cpp :iabbrev <buffer> frlp for (int i = 0; i <; i++) {<cr><cr>}<esc>?;<cr>i
 autocmd FileType * unlet! g:airline#extensions#whitespace#checks
+autocmd FileType vimwiki let g:airline#extensions#whitespace#checks = [ 'indent' ]
 autocmd FileType markdown let g:airline#extensions#whitespace#checks = [ 'indent' ]
 
 "Change swap directory
@@ -26,7 +27,7 @@ noremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>sw :StripWhitespace<cr>
 
 "Wiki
-let g:vimwiki_list = [{'path': '~/Dropbox/wikis/college/', 'path_html': '~/Dropbox/wikis/college-html/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1},
+let g:vimwiki_list = [{'path': '~/Dropbox/wikis/', 'path_html': '~/Dropbox/wikis/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1, 'syntax': 'markdown', 'ext': '.md'},
     \ {'path': '~/Dropbox/wikis/programming/', 'path_html': '~/Dropbox/wikis/programming-html', 'templaet_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
 
 "Colors/Themes
@@ -38,7 +39,6 @@ let g:airline_theme='solarized'
 
 set encoding=utf-8
 set number
-set relativenumber
 
 "Syntastic
 set statusline+=%#warningmsg#
