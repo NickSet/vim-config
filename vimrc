@@ -31,7 +31,6 @@ let g:vimwiki_list = [{'path': '~/Dropbox/wikis/', 'path_html': '~/Dropbox/wikis
     \ {'path': '~/Dropbox/wikis/programming/', 'path_html': '~/Dropbox/wikis/programming-html', 'templaet_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
 
 "Colors/Themes
-set t_Co=256
 syntax on
 set background=dark
 colorscheme solarized
@@ -71,3 +70,4 @@ let NERDTreeMinimalUI=1
 
 "Tagbar
 nmap <F8> :TagbarToggle<CR>
+
