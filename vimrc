@@ -7,6 +7,8 @@ let maplocalleader = "\<Space>"
 filetype plugin indent on
 set nocompatible
 
+set clipboard=unnamedplus
+
 "Auto Commands
 autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType cpp nnoremap <buffer> <localleader>uc 0xx
