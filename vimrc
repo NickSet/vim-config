@@ -10,6 +10,8 @@ set nocompatible
 set clipboard=unnamedplus
 
 "Auto Commands
+
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType cpp nnoremap <buffer> <localleader>uc 0xx
 autocmd FileType cpp :iabbrev <buffer> frlp for (int i = 0; i <; i++) {<cr><cr>}<esc>?;<cr>i
@@ -59,7 +61,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set autoindent
-set textwidth=150
+set textwidth=80
 set linebreak
 
 "Airline Settings
@@ -73,3 +75,5 @@ let NERDTreeMinimalUI=1
 "Tagbar
 nmap <F8> :TagbarToggle<CR>
 
+"Markdown
+let g:markdown_fenced_languages = ['cpp', 'bash=sh', 'swift']
