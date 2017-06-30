@@ -77,3 +77,6 @@ nmap <F8> :TagbarToggle<CR>
 
 "Markdown
 let g:markdown_fenced_languages = ['cpp', 'bash=sh', 'swift']
+
+"Python
+let python_highlight_all=1
