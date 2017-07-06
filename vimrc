@@ -37,8 +37,8 @@ let g:vimwiki_list = [{'path': '~/Dropbox/wikis/', 'path_html': '~/Dropbox/wikis
 "Colors/Themes
 syntax on
 set background=dark
-colorscheme nord
-let g:airline_theme='nord'
+colorscheme solarized 
+let g:airline_theme='solarized'
 
 set encoding=utf-8
 set number
