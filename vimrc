@@ -37,8 +37,10 @@ let g:vimwiki_list = [{'path': '~/Dropbox/wikis/', 'path_html': '~/Dropbox/wikis
 "Colors/Themes
 syntax on
 set background=dark
-colorscheme nord
-let g:airline_theme='nord'
+colorscheme solarized
+let g:airline_theme='solarized'
+set t_Co=256
+let g:solarized_termcolors=256
 
 set encoding=utf-8
 set number
@@ -76,6 +78,9 @@ let NERDTreeMinimalUI=1
 nmap <F8> :TagbarToggle<CR>
 
 "Markdown
-let g:markdown_fenced_languages = ['cpp', 'bash=sh', 'swift']
+let g:markdown_fenced_languages = ['cpp', 'bash=sh', 'swift', 'python']
 
 "Python
+
+"SimpylFold
+let g:SimpylFold_docstring_preview = 1
