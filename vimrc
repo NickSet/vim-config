@@ -1,16 +1,11 @@
 execute pathogen#infect()
 
-
-let mapleader = "\<Space>"
-let maplocalleader = "\<Space>"
-
 filetype plugin indent on
 set nocompatible
 
 set clipboard=unnamedplus
 
 "Auto Commands
-
 autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 autocmd FileType cpp nnoremap <buffer> <localleader>c I//<esc>
 autocmd FileType cpp nnoremap <buffer> <localleader>uc 0xx
@@ -23,6 +18,8 @@ autocmd FileType markdown let g:airline#extensions#whitespace#checks = [ 'indent
 set dir=/tmp
 
 "Mappings
+let maplocalleader = "\<Space>"
+let mapleader = "\<Space>"
 inoremap jk <ESC>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>
