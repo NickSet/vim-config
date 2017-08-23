@@ -1,0 +1,26 @@
+filetype plugin indent on
+set nocompatible
+
+"Mappings
+let maplocalleader = "\<Space>"
+let mapleader = "\<Space>"
+inoremap jk <ESC>
+
+"Colors/Themes
+syntax on
+set background=dark
+colorscheme solarized
+set t_Co=256
+let g:solarized_termcolors=256
+
+set encoding=utf-8
+set number
+
+"Tabs/Indentations
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set autoindent
+set textwidth=80
+set linebreak
