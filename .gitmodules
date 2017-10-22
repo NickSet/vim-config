@@ -37,3 +37,6 @@
 [submodule "bundle/FastFold"]
 	path = bundle/FastFold
 	url = https://github.com/Konfekt/FastFold.git
+[submodule "bundle/onedark.vim"]
+	path = bundle/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git
