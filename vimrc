@@ -27,10 +27,6 @@ noremap <leader>sv :source $MYVIMRC<cr>
 "Better Whitespace
 nnoremap <leader>sw :StripWhitespace<cr>
 
-"Wiki
-let g:vimwiki_list = [{'path': '~/Dropbox/wikis/', 'path_html': '~/Dropbox/wikis/', 'template_path': '~/.vim/wiki-templates/', 'auto_toc': 1, 'syntax': 'markdown', 'ext': '.md'},
-    \ {'path': '~/Dropbox/wikis/programming/', 'path_html': '~/Dropbox/wikis/programming-html', 'templaet_path': '~/.vim/wiki-templates/', 'auto_toc': 1}]
-
 "Colors/Themes
 syntax on
 set background=dark
