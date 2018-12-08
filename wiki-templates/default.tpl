@@ -8,5 +8,5 @@
 <body>
 %content%
 </body>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify/loader/run_prettify.js?skin=desert"></script>
 </html>
